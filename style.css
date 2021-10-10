@@ -1,0 +1,192 @@
+:root {
+  --main-color: #03a9f4;
+  --section-padding: 50px;
+  --main-background-color: #f3f3f3;
+}
+body {
+  font-family: "Arial"
+}
+@media (min-width: 767px) {
+  .container {
+    width: 750px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 950px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+header {
+  background-color: #fff;
+}
+header .container {
+  padding: 10px 20px
+}
+header .container nav ul {
+  display: flex;
+  list-style: none;
+}
+header .container nav ul li {
+  padding: 10px 15px;
+}
+header .container nav ul li a {
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  color: black;
+}
+.text {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--main-background-color);
+}
+.text .container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.text .container h1 span {
+  color: var(--main-color);
+}
+.text .container p {
+  line-height: 1.8;
+}
+.porto {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.porto .container {
+  text-align: center;
+}
+.porto .container .box i {
+  font-size: 60px;
+}
+.porto .container .box p {
+  color: #777;
+}
+.about {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--main-background-color);
+}
+.about img {
+  width: 400px;
+}
+.about .text {
+  margin-left: 20px;
+}
+.about .text p {
+  line-height: 1.5
+}
+.test {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.test .container > div {
+  width: calc(96% / 3);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+.test .container div:nth-child(1) {
+  background-color: #f44336;
+}
+.test .container div:nth-child(2) {
+  background-color: #2169f3;
+}
+.test .container div:nth-child(3) {
+  background-color: #4caf50;
+}
+.test .container div > span {
+  display: block;
+}
+.test .container div span:first-of-type {
+  font-size: 50px;
+}
+.test .container div span:last-of-type {
+  font-size: 14px;
+}
+.our-skills {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--main-background-color);
+}
+.our-skills .container {
+  flex-direction: column;
+  justify-content: center;
+}
+.our-skills h2 {
+  text-align: center;
+}
+.our-skills .progress-content {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+.our-skills .progress-content > span {
+  position: relative;
+  width: 100px;
+  left: -10px;
+  top: 12px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.our-skills .progress-content > div {
+  background-color: #fff;
+  width: calc(100% - 100px);
+  height: 30px;
+  margin: 10px auto 20px;
+  position: relative;
+}
+.our-skills .progress-content div span {
+  display: block;
+  height: 100%;
+  background-color: var(--main-color);
+  position: relative;
+}
+.our-skills .progress-content:nth-of-type(1) div span::before {
+  content: "60%";
+  position: absolute;
+  font-weight: bold;
+  right: 0;
+  top: 5px;
+}
+.our-skills .progress-content:nth-of-type(2) div span::before {
+  content: "70%";
+  position: absolute;
+  font-weight: bold;
+  right: 0;
+  top: 5px;
+}
+.our-skills .progress-content:nth-of-type(3) div span::before {
+  content: "80%";
+  position: absolute;
+  font-weight: bold;
+  right: 0;
+  top: 5px;
+}
+.our-skills .progress-content:nth-of-type(4) div span::before {
+  content: "66%";
+  position: absolute;
+  font-weight: bold;
+  right: 0;
+  top: 5px;
+}
+/*# sourceMappingURL=style.css.map */
